@@ -1,1 +1,16 @@
-Hello, this is my first readme, you can edit this after coding.
+# Crowd Simulator
+A lightweight, dependency-free web-based crowd simulator. The scene uses a canvas-based faux-3D view of a cube-shaped building with entrances, exits, and attraction points. Multiple species spawn according to statistical distributions, seek their preferred goals, dwell for randomized times, and exit while recording metrics such as spawn time, time to goal, and total time in the cube.
+
+## Running locally
+1) From the repo root, install Node.js 18+.
+2) Start the bundled static server (auto-serves `index.html` as a fallback so you won’t see “Not Found”):
+   - `npm start` (or `npm run serve`) — uses `server.js` at the project root.
+3) Open `http://localhost:8000/` in your browser. You can still open `index.html` directly if you prefer, but the provided server ensures the correct working directory and routes everything back to the app.
+
+Troubleshooting “Not Found”
+- Make sure the server is started from the repo root (`npm run serve`); the index fallback only applies when the server is running.
+- If you hit a deep link (e.g., `/foo`), the server will still return the simulator so you shouldn’t see “Not Found.” If you do, restart the server from the root directory and refresh.
+
+- Drag to rotate the camera view, scroll to zoom.
+- Species are color-coded in the legend (Workers, Visitors, Security).
+- The status card lists active and departed agents plus recent exit summaries.
