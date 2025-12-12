@@ -1,0 +1,15 @@
+{
+  "name": "crowd-simulator",
+  "version": "1.0.0",
+  "description": "Dependency-free canvas-based crowd simulator",
+  "main": "main.js",
+  "scripts": {
+    "start": "node server.js",
+    "serve": "node server.js",
+    "test": "echo \"No automated tests configured\""
+  },
+  "keywords": ["crowd", "simulation", "canvas"],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
